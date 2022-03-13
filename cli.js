@@ -4,10 +4,8 @@ const path = process.argv;
 
 const requisitionInterval = Number(path[2]);
 
-const table = new Table();
-
 if (requisitionInterval < 15 || !requisitionInterval) {
-  table.execute(15);
+  new Table(15).execute();
 } else {
-  table.execute(requisitionInterval);
+  new Table(requisitionInterval).execute();
 }
