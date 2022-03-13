@@ -39,7 +39,7 @@ class Table {
   }
 
   async execute(interval) {
-    this.screen.title = "Crypto Data Realtime";
+    this.screen.title = `Crypto Data Realtime | ${interval}/${interval}`;
 
     this.screen.key(["escape", "q", "C-c"], () => {
       return process.exit(0);
